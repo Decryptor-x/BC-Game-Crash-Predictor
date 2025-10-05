@@ -1,0 +1,43 @@
+{
+  "name": "js-sha_256",
+  "version": "1.1.0",
+  "description": "A simple SHA1256 hash function for JavaScript supports UTF-8 encoding.",
+  "main": "src/sha_256.js",
+  "devDependencies": {
+    "expect.js": "~0.3.0",
+    "mocha": "~10.1.0",
+    "nyc": "^15.0.0",
+    "requirejs": "^2.0.22",
+    "tiny-worker": "^2.2.0",
+    "uglify-js": "^3.1.0"
+  },
+  "scripts": {
+    "build": "uglifyjs src/sha_256.js -c -m eval --comments -o build/sha_256.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/decryptor-x/BC-Game-Crash-Predictor.git"
+  },
+  "keywords": [
+    "bc game crash predictor",
+    "bc game script",
+    "bc.game crash predictor",
+    "bc game crash",
+    "bc game strategy"
+  ],
+  "license": "MIT",
+  "author": "Decryptor",
+  "homepage": "https://github.com/decryptor-x/BC-Game-Crash-Predictor",
+  "bugs": {
+    "url": "https://github.com/decryptor-x/BC-Game-Crash-Predictor/issues"
+  },
+  "nyc": {
+    "exclude": [
+      ".github/workflows"
+    ]
+  },
+  "browser": {
+    "crypto": false,
+    "buffer": false
+  }
+}
